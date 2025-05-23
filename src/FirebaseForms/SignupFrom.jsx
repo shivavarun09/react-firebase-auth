@@ -22,7 +22,7 @@ try{
   const {email,password}=userSignupDetails;
 const userCredentials = await createUserWithEmailAndPassword(auth,email,password);
 const user = userCredentials.user;
-alert(`user Created with Emial ${user.email}... redirecting to login`)
+alert(`Hello ${user.email} Signup successful! Redirecting to login..."`)
 navigate('/login')
 }
 catch(err){
