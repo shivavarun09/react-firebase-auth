@@ -22,7 +22,7 @@ try{
   const {email,password}=userSignupDetails;
 const userCredentials = await createUserWithEmailAndPassword(auth,email,password);
 const user = userCredentials.user;
-alert(`Hello ${user.email} Signup successful! Redirecting to login..."`)
+alert(`Hello ${user.email} Signup successful! Redirecting to login...`)
 navigate('/login')
 }
 catch(err){
