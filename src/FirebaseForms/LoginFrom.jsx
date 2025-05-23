@@ -25,7 +25,7 @@ const LoginForm = () => {
     try {
       const userCredentials = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredentials.user;
-      alert(`${user.email} login successful... redirecting to dashboard`);
+      alert(`Hello ${user.email} login successful... redirecting to dashboard`);
       navigate('/Logindashboard');
     } catch (error) {
       alert(`Login failed: ${error.message}`);
