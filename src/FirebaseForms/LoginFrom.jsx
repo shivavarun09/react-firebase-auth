@@ -49,6 +49,7 @@ const LoginForm = () => {
             type="email"
             placeholder="Enter email"
             name="email"
+            required
             onChange={getUserLoginDetails}
           />
         </Form.Group>
@@ -59,6 +60,7 @@ const LoginForm = () => {
             type="password"
             placeholder="Password"
             name="password"
+            required
             onChange={getUserLoginDetails}
           />
         </Form.Group>

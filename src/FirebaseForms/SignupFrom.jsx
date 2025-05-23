@@ -37,21 +37,21 @@ catch(err){
       </Form.Group>
   <Form.Group className="mb-3" >
         <Form.Label>Enter name</Form.Label>
-        <Form.Control type="text" placeholder="Enter name" name='name' onChange={getUserDetails}/>
+        <Form.Control type="text" placeholder="Enter name" name='name' required onChange={getUserDetails}/>
       </Form.Group>
 
       <Form.Group className="mb-3" >
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" name='email' onChange={getUserDetails}/>
+        <Form.Control type="email" placeholder="Enter email" name='email' required onChange={getUserDetails}/>
       </Form.Group>
 
       <Form.Group className="mb-3" >
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" name='password' onChange={getUserDetails}/>
+        <Form.Control type="password" placeholder="Password" name='password' required onChange={getUserDetails}/>
       </Form.Group>
 
         <Form.Group className="mb-3" >
-    <Form.Select name='role' onChange={getUserDetails}>
+    <Form.Select name='role' onChange={getUserDetails} required>
       <option value="">Select role</option>
       <option value="Recruiter">Recruiter</option>
       <option value="Recruiter">Jobseeker</option>
